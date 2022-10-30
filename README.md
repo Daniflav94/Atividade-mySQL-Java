@@ -1,8 +1,10 @@
 ﻿# Atividade JAVA & MYSQL - Modelagem de Banco de Dados e Modelagem Orientada a Objetos
  
  O objetivo dessa atividade era escolher uma temática e criar um diagrama de Entidade-Relacionamento, desenvolver as tabelas na linguagem SQL e desenvolver as classes no Java de cada entidade.
- A temática que escolhi foi Biblioteca, as entidades do meu banco de dados são Cliente, Endereço e Livro.
- No Java desenvolvi uma aplicação para a biblioteca que possui listagem de todos os clientes e livros cadastrados e também uma lista que contém todos os empréstimos realizados pela biblioteca (contendo relação entre cliente e livro). Também desenvolvi métodos para alugar livros, devolver livros, cadastrar clientes e cadastrar livros. Dentro dos métodos criei validações que verificam se o cliente ou o livro estão cadastrados antes de realizar o empréstimo do livro, ou se o livro está disponível.
+
+A temática que escolhi foi Biblioteca, as entidades do meu banco de dados são Cliente, Endereço e Livro.
+
+No Java desenvolvi uma aplicação para a biblioteca que possui listagem de todos os clientes e livros cadastrados e também uma lista que contém todos os empréstimos realizados pela biblioteca (contendo relação entre cliente e livro). Também desenvolvi métodos para alugar livros, devolver livros, cadastrar clientes e cadastrar livros. Dentro dos métodos criei validações que verificam se o cliente ou o livro estão cadastrados antes de realizar o empréstimo do livro, ou se o livro está disponível.
 
 ## Diagrama
 
