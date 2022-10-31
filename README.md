@@ -8,7 +8,8 @@ No Java desenvolvi uma aplicação para a biblioteca que possui listagem de todo
 
 ## Diagrama
 
-![Diagrama banco de dados - Biblioteca](https://user-images.githubusercontent.com/99519903/198891635-011bae72-366b-4f61-81d3-9744c4135415.png)
+![Diagrama banco de dados - Biblioteca](https://user-images.githubusercontent.com/99519903/199013293-e8a57bcb-55d8-4ace-aa7d-7563fd43110e.png)
+
 
 ## Resultado terminal da aplicação:
 
