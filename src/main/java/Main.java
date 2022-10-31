@@ -6,9 +6,9 @@ public class Main {
         Biblioteca bibliotecaDaDani = new Biblioteca();
         System.out.println("\n \u001b[30m \u001b[104m                    BIBLIOTECA DA DANI  \uD83D\uDCDA                  \u001b[m \n");
 
-        Cliente cliente1 = new Cliente("Daniele Almeida", "424.684.828-00", 945567800, new Endereco("Rua Augusto Calheiro", "000A", "09380-000", "Mauá", "SP"));
-        Cliente cliente2 = new Cliente("Bob Almeida", "444.555.666-00", 943490606, new Endereco("Rua Francisco Alves", "123", "09380-360", "Mauá", "SP"));
-        Cliente cliente3 = new Cliente("Felipe Almeida", "555.555.666-00", 993490606, new Endereco("Rua Francisco Alves", "123", "09380-360", "Mauá", "SP"));
+        Cliente cliente1 = new Cliente("Daniele Almeida", "42468482800", "945567800", new Endereco("Rua Augusto Calheiro", "000A", "09380-000", "Mauá", "SP"));
+        Cliente cliente2 = new Cliente("Bob Almeida", "44455566600", "943490606", new Endereco("Rua Francisco Alves", "123", "09380-360", "Mauá", "SP"));
+        Cliente cliente3 = new Cliente("Felipe Almeida", "555555666-00", "993490606", new Endereco("Rua Francisco Alves", "123", "09380-360", "Mauá", "SP"));
 
         Livro livro1 = new Livro("Orgulho e Preconceito", "Jane Austen", 2);
         Livro livro2 = new Livro("Frankstein", "Mary Shelley", 3);

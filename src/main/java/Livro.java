@@ -26,7 +26,12 @@ public class Livro {
     }
 
     public void setTitulo(String titulo) {
-        this.titulo = titulo;
+
+        if (titulo.length() > 2) {
+            this.titulo = titulo;
+        } else {
+            System.out.println("Erro! Título precisa ter pelo menos 2 caracteres.");
+        }
     }
 
     public String getAutor() {
@@ -34,7 +39,11 @@ public class Livro {
     }
 
     public void setAutor(String autor) {
-        this.autor = autor;
+        if (autor.length() > 2) {
+            this.autor = autor;
+        } else {
+            System.out.println("Erro! Autor precisa ter pelo menos 2 caracteres.");
+        }
     }
 
     public int getQntExemplares() {

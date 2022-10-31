@@ -2,16 +2,31 @@ public class Cliente {
     private int idCliente;
     private String nomeCompleto;
     private String cpf;
-    private int telefone;
+    private String telefone;
     private Endereco endereco;
     private static int totalClientes = 0;
 
-    public Cliente(String nomeCompleto, String cpf, int telefone, Endereco endereco) {
+    public Cliente(String nomeCompleto, String cpf, String telefone, Endereco endereco) {
         Cliente.totalClientes++;
         this.idCliente += totalClientes;
-        this.nomeCompleto = nomeCompleto;
-        this.cpf = cpf;
-        this.telefone = telefone;
+
+        if(nomeCompleto.length() < 5) {
+            System.out.println("Digite o nome completo");
+        } else{
+            this.nomeCompleto = nomeCompleto;
+        }
+
+        if(cpf.length() != 11) {
+            System.out.println("Digite um número de CPF válido com 11 dígitos (Obs: sem acentuação)");
+        } else {
+            this.cpf = cpf;
+        }
+        if(telefone.length() < 8){
+            System.out.println("Digite um número de telefone válido, com pelo menos 8 dígitos.");
+        } else {
+            this.telefone = telefone;
+        }
+
         this.endereco = endereco;
     }
 
@@ -28,7 +43,11 @@ public class Cliente {
     }
 
     public void setNomeCompleto(String nomeCompleto) {
-        this.nomeCompleto = nomeCompleto;
+        if(nomeCompleto.length() < 5) {
+            System.out.println("Digite o nome completo");
+        } else{
+            this.nomeCompleto = nomeCompleto;
+        }
     }
 
     public String getCpf() {
@@ -36,15 +55,23 @@ public class Cliente {
     }
 
     public void setCpf(String cpf) {
-        this.cpf = cpf;
+        if (this.cpf.length() != 11) {
+            System.out.println("Digite um número de CPF válido com 11 dígitos (Obs: sem acentuação).");
+        } else {
+            this.cpf = cpf;
+        }
     }
 
-    public int getTelefone() {
+    public String getTelefone() {
         return telefone;
     }
 
-    public void setTelefone(int telefone) {
-        this.telefone = telefone;
+    public void setTelefone(String telefone) {
+        if (this.telefone.length() < 9) {
+            System.out.println("Digite um número de telefone válido, com pelo menos 8 dígitos.");
+        } else {
+            this.telefone = telefone;
+        }
     }
 
     public Endereco getEndereco() {
